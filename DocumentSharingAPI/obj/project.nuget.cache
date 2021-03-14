@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "EFAzLyVxnW8m6abhscQregNZGrU2rHsMX3ruiXflcckjdKp468L24C1FMKQZoYOH7uQgLv/3RVg07MQzcgluyA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pehli\\source\\repos\\DocumentSharing\\DocumentSharingAPI\\DocumentSharingAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pehli\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.4\\microsoft.aspnetcore.http.features.5.0.4.nupkg.sha512",
+    "C:\\Users\\pehli\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\pehli\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\pehli\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
