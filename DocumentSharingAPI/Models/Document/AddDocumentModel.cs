@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,6 +10,8 @@ namespace DocumentSharingAPI.Models.Document
     {
         public string Description { get; set; }
         public string RefNo { get; set; }
-        public Dictionary<string,byte[]> Documents { get; set; }
+        //public List<Files> Documents { get; set; } 
+        public IFormFileCollection File{ get; set; }
     }
+
 }

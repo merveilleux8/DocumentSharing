@@ -23,10 +23,10 @@ namespace DocumentSharingAPI.Controllers
         }
         // POST api/<InboxController>
         [HttpPost]
-        public void ReceiveInbox([FromBody] ReceiveInboxModel receiveInboxModel)
+        public async void ReceiveInbox([FromBody] ReceiveInboxModel receiveInboxModel)
         {
-            _documentService.CreateMessage(receiveInboxModel.Description, receiveInboxModel.RefNo, receiveInboxModel.Documents);
-            _inboxService.CreateInbox(receiveInboxModel.SenderUser, receiveInboxModel.RefNo);
+            await _documentService.CreateMessage(receiveInboxModel.Description, receiveInboxModel.RefNo, receiveInboxModel.Documents);
+            await _inboxService.CreateInbox(receiveInboxModel.SenderUser, receiveInboxModel.RefNo);
         }
     }
 }

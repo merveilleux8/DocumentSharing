@@ -12,5 +12,6 @@ namespace DocumentSharingService
         Task<List<UserEndpoint>> GetUserEndpoints();
         Task<UserEndpoint> GetUserEndpoint(string user);
         Task<UserEndpoint> GetMyUserEndpoint();
+        Task<List<string>> GetReceiverUsers();
     }
 }

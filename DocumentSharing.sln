@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentSharingAPI", "DocumentSharingAPI\DocumentSharingAPI.csproj", "{458F2685-D9E0-4F43-9DFC-E8CE3E9B1E19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentSharingAPI", "DocumentSharingAPI\DocumentSharingAPI.csproj", "{458F2685-D9E0-4F43-9DFC-E8CE3E9B1E19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentSharingService", "DocumentSharingService\DocumentSharingService.csproj", "{3013BC34-12E2-4F34-B913-3EEE6B3FBFBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentSharingService", "DocumentSharingService\DocumentSharingService.csproj", "{3013BC34-12E2-4F34-B913-3EEE6B3FBFBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentSharingData", "DocumentSharingData\DocumentSharingData.csproj", "{0182C2AA-B6A3-4EF2-A2A1-ADA900B95E07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentSharingData", "DocumentSharingData\DocumentSharingData.csproj", "{0182C2AA-B6A3-4EF2-A2A1-ADA900B95E07}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D1436725-80EF-4115-BD1F-02FE42757355}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0182C2AA-B6A3-4EF2-A2A1-ADA900B95E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0182C2AA-B6A3-4EF2-A2A1-ADA900B95E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0182C2AA-B6A3-4EF2-A2A1-ADA900B95E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1436725-80EF-4115-BD1F-02FE42757355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1436725-80EF-4115-BD1F-02FE42757355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1436725-80EF-4115-BD1F-02FE42757355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1436725-80EF-4115-BD1F-02FE42757355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

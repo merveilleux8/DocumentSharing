@@ -26,5 +26,15 @@ namespace DocumentSharingAPI.Controllers
         {
             _endpointService.CreateUserEndpoint(addUserEndpointModel.User, addUserEndpointModel.Endpoint);
         }
+
+
+        // GET: api/<UserEndpointController>
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var result = await _endpointService.GetReceiverUsers();
+            return Ok(new ResponseResult { Data = result });
+        }
+
     }
 }

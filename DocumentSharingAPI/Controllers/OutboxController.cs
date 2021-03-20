@@ -58,5 +58,13 @@ namespace DocumentSharingAPI.Controllers
                 await _outboxService.CreateOutbox(userEndpoint.User, message.RefNo);
             }
         }
+
+        // GET: api/<OutboxController>
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var result = await _outboxService.GetOutboxes();
+            return Ok(new ResponseResult { Data = result });
+        }
     }
 }

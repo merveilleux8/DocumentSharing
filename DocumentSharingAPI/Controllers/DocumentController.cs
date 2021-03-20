@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using DocumentSharingAPI.Models.Document;
 using DocumentSharingData;
 using DocumentSharingService;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -23,10 +25,10 @@ namespace DocumentSharingAPI.Controllers
 
         // GET: api/<DocumentController>
         [HttpGet]
-        public async Task<List<Document>> Get()
+        public async Task<IActionResult> Get()
         {
             var result = await _documentService.GetMessages();
-            return result;
+            return Ok(new ResponseResult { Data = result });
         }
 
         // GET api/<DocumentController>/5
@@ -38,9 +40,9 @@ namespace DocumentSharingAPI.Controllers
 
         // POST api/<DocumentController>
         [HttpPost]
-        public void Post([FromBody] AddDocumentModel addDocumentModel)
+        public void Post([FromForm] AddDocumentModel addDocumentModel)
         {
-            _documentService.CreateMessage(addDocumentModel.Description, addDocumentModel.RefNo, addDocumentModel.Documents);
+            _documentService.CreateMessage(addDocumentModel.Description, addDocumentModel.RefNo, addDocumentModel.File?.ToDictionary(x=> x.FileName , x=> ConvertToByteArray(x)));
         }
 
         // PUT api/<DocumentController>/5
@@ -53,6 +55,22 @@ namespace DocumentSharingAPI.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        private byte[] ConvertToByteArray(IFormFile file)
+        {
+            if (file.Length > 0)
+            {
+                using (var ms = new MemoryStream())
+                {
+                    file.CopyTo(ms);
+                    var fileBytes = ms.ToArray();
+                    string s = Convert.ToBase64String(fileBytes);
+                    return fileBytes;
+                }
+            }
+            else
+                return Array.Empty<byte>();
         }
     }
 }

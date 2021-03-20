@@ -20,5 +20,10 @@ namespace DocumentSharingService.Impl
         {
             await _fileService.Add(FileName, new Outbox() { ReceiverUser = receiverUser, RefNo = refNo });
         }
+
+        public async Task<List<Outbox>> GetOutboxes()
+        {
+            return await _fileService.Get(FileName);
+        }
     }
 }

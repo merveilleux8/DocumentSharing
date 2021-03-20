@@ -1,0 +1,12 @@
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\bin\Release\netcoreapp3.1\DocumentSharingService.deps.json
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\bin\Release\netcoreapp3.1\DocumentSharingService.dll
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\bin\Release\netcoreapp3.1\DocumentSharingService.pdb
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\bin\Release\netcoreapp3.1\DocumentSharingData.dll
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\bin\Release\netcoreapp3.1\DocumentSharingData.pdb
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\obj\Release\netcoreapp3.1\DocumentSharingService.csprojAssemblyReference.cache
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\obj\Release\netcoreapp3.1\DocumentSharingService.AssemblyInfoInputs.cache
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\obj\Release\netcoreapp3.1\DocumentSharingService.AssemblyInfo.cs
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\obj\Release\netcoreapp3.1\DocumentSharingService.csproj.CoreCompileInputs.cache
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\obj\Release\netcoreapp3.1\DocumentSharingService.csproj.CopyComplete
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\obj\Release\netcoreapp3.1\DocumentSharingService.dll
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingService\obj\Release\netcoreapp3.1\DocumentSharingService.pdb
