@@ -31,3 +31,5 @@ C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingAPI\obj\Debug\netcore
 C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingAPI\obj\Debug\netcoreapp3.1\DocumentSharingAPI.dll
 C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingAPI\obj\Debug\netcoreapp3.1\DocumentSharingAPI.pdb
 C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingAPI\obj\Debug\netcoreapp3.1\DocumentSharingAPI.genruntimeconfig.cache
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingAPI\bin\Debug\netcoreapp3.1\outbox.json
+C:\Users\pehli\source\repos\DocumentSharing\DocumentSharingAPI\bin\Debug\netcoreapp3.1\inbox.json

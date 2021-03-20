@@ -8,8 +8,8 @@ namespace DocumentSharingService
 {
     public interface IDocumentService
     {
-        Task CreateMessage(string description, string refNo, Dictionary<string, byte[]> documentList);
-        Task<List<Document>> GetMessages();
+        Task CreateMessage(string description, string refNo, Dictionary<string, byte[]> documentList, DocumentType documentType);
+        Task<List<Document>> GetMessages(DocumentType documentType);
         Task<Document> GetMessage(string refNo);
     }
 }

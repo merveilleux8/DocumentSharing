@@ -27,7 +27,7 @@ namespace DocumentSharingAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var result = await _documentService.GetMessages();
+            var result = await _documentService.GetMessages(DocumentType.outbox);
             return Ok(new ResponseResult { Data = result });
         }
 
@@ -42,7 +42,7 @@ namespace DocumentSharingAPI.Controllers
         [HttpPost]
         public void Post([FromForm] AddDocumentModel addDocumentModel)
         {
-            _documentService.CreateMessage(addDocumentModel.Description, addDocumentModel.RefNo, addDocumentModel.File?.ToDictionary(x=> x.FileName , x=> ConvertToByteArray(x)));
+            _documentService.CreateMessage(addDocumentModel.Description, addDocumentModel.RefNo, addDocumentModel.File?.ToDictionary(x => x.FileName, x => ConvertToByteArray(x)), DocumentType.outbox);
         }
 
         // PUT api/<DocumentController>/5

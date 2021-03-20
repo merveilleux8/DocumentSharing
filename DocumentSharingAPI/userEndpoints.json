@@ -1,14 +1,14 @@
 [
   {
     "User": "merve",
-    "Endpoint": "https://localhost:44338"
+    "Endpoint": "http://localhost:44338"
   },
   {
     "User": "merve2",
-    "Endpoint": "https://localhost:50749"
+    "Endpoint": "http://localhost:50749"
   },
   {
     "User": "merve3",
-    "Endpoint": "https://localhost:44337"
+    "Endpoint": "http://localhost:44337"
   }
 ]

@@ -9,5 +9,6 @@ namespace DocumentSharingData
         public string RefNo { get; set; }
         public Dictionary<string, byte[]> Documents { get; set; }
         public string CreationDate { get; set; }
+        public DocumentType DocumentType { get; set; }
     }
 }

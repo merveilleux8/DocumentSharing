@@ -17,14 +17,14 @@ namespace DocumentSharingService.Impl
             _fileService = fileService;
         }
 
-        public async Task CreateMessage(string description, string refNo, Dictionary<string, byte[]> documentDict)
+        public async Task CreateMessage(string description, string refNo, Dictionary<string, byte[]> documentDict, DocumentType documentType)
         {
-            await _fileService.Add(FileName, new Document { Description = description, RefNo = refNo, Documents = documentDict, CreationDate = DateTime.UtcNow.ToString("dd MMMM, yyyy hh:mm tt") });
+            await _fileService.Add(FileName, new Document { Description = description, RefNo = refNo, Documents = documentDict, DocumentType = documentType, CreationDate = DateTime.UtcNow.ToString("dd MMMM, yyyy hh:mm tt") });
         }
 
-        public async Task<List<Document>> GetMessages()
+        public async Task<List<Document>> GetMessages(DocumentType documentType)
         {
-            return await _fileService.Get(FileName);
+            return await _fileService.Get(FileName, filter => filter.DocumentType == documentType);
         }
 
         public async Task<Document> GetMessage(string refNo)
